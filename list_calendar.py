@@ -1,9 +1,5 @@
 import caldav
-import pdb
-from datetime import datetime, timedelta, date
-from icalendar.prop import vDuration
-import json
-import mapcal
+import os
 
 url = 'https://caldav.fastmail.com/dav/'
 
@@ -14,7 +10,8 @@ with caldav.DAVClient(url=url, username=fastmail_username, password=fastmail_pas
     my_principal = client.principal()
 
     calendars = my_principal.calendars()
+
     the_c = [c for c in calendars if c.name == 'Main'][0]
 
     for e in the_c.events():
-         print(e.data)
+        print(e.data)

@@ -1,9 +1,5 @@
 import caldav
-import pdb
-from datetime import datetime, timedelta, date
-from icalendar.prop import vDuration
-import json
-import mapcal
+import os
 
 # Needs the pip3 version of caldav not the debian version.
 
