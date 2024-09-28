@@ -1,5 +1,5 @@
 import datetime
-from google_calendar_auth_boilerplate import authboilerplate
+from _google_calendar_auth_boilerplate import authboilerplate
 import json
 
 service = authboilerplate()
